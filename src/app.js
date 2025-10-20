@@ -59,7 +59,7 @@ const main = async () => {
     console.log('📅 Estadísticas de mensajes programados:', scheduledStats)
 
     const adapterFlow = createFlow([dynamicFlow])
-    const adapterProvider = createProvider(Provider)
+    const adapterProvider = createProvider(Provider,{version: [2, 3000, 1025190524]})
     const adapterDB = new Database()
 
     const { handleCtx, httpServer } = await createBot({

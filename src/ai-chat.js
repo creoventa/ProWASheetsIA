@@ -63,7 +63,7 @@ class GroqService {
 
             const chatCompletion = await this.groq.chat.completions.create({
                 messages,
-                model: 'llama3-8b-8192',
+                model: 'llama-3.1-8b-instant',
                 temperature: this.settings.temperature || 0.5,
                 max_tokens: this.settings.max_tokens || 200,
                 top_p: this.settings.top_p || 1,
